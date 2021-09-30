@@ -1,4 +1,4 @@
-# English-Thesarus(Dictionary)
+# English-thesaurus(Dictionary)
 Find the meaning of the word input by the user.
 
 ## Description
