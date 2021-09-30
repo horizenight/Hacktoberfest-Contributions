@@ -32,6 +32,7 @@ This repository is for anyone around the globe who wants to start their open-sou
     - [Git and Github](#git--github)
     - [What to Contribute?](#what-to-contribute)
 - [How to contribute?](#how-to-contribute)
+- [Resources](#resources)
 - [Contributors](#contributors)
 
 ## Hacktoberfest
