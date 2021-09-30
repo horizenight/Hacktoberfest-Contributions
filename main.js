@@ -1,7 +1,9 @@
 $(function () {
-  $.getJSON("/resources/contributors.json", function (data) {
-    $.each(data.contributors, function (i, contributor) {
-      var contributorCol = `
+  $.getJSON(
+    "/Hacktoberfest-Contributions/resources/contributors.json",
+    function (data) {
+      $.each(data.contributors, function (i, contributor) {
+        var contributorCol = `
       <div class="col-lg-12 mb-4">
             <div class="card">
               <div class="card-body">
@@ -19,7 +21,8 @@ $(function () {
             </div>
           </div>
         `;
-      $(contributorCol).appendTo("#contributions");
-    });
-  });
+        $(contributorCol).appendTo("#contributions");
+      });
+    }
+  );
 });

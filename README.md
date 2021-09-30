@@ -68,7 +68,7 @@ Refer to [Contributing Guidelines](https://github.com/Learn-Write-Repeat/Hacktob
 
 Once you are ready with the setup, follow the below guidelines:
 
-1. Create a folder with the Topic Name in snake case, i.e., if your topic is URL Shortener using Flask, the folder name should be **url_shortener_using_flask**.
+1. Create a folder inside contributions folder with the Topic Name in snake case, i.e., if your topic is URL Shortener using Flask, the folder name should be **url_shortener_using_flask**.
 
 2. Create a markdown file called README.md inside the folder and describe your topic. The description can be **Problem statement of your code**, **Algorithm description**, or something that is relevant to your code.
 
