@@ -31,8 +31,6 @@ This repository is for anyone around the globe who wants to start their open-sou
 - [Prerequisite](#prerequisite)
     - [Git and Github](#git--github)
     - [What to Contribute?](#what-to-contribute)
-    - [Using Fetch](#using-fetch)
-    - [Local setup](#local-setup)
 - [How to contribute?](#how-to-contribute)
 - [Contributors](#contributors)
 
@@ -61,114 +59,37 @@ Here, we have mentioned the instructions to set up git. If you don't already kno
 
 ### What to Contribute
 
-
-
-### Using Fetch
-
-The Fetch API provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline, such as requests and responses. It also provides a global fetch() method that provides an easy, logical way to fetch resources asynchronously across the network.
-
-[![Learn more](https://img.shields.io/badge/-Learn%20more-orange?style=plastic)](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
-
-### Local setup
-- Go to the top of this page and click on the "Fork" button. 
-
-![Fork](https://i.imgur.com/IyoLUXV.png)
-
-This would make a copy of this repository in your account. You will see `<your_username>/Random-APIs`.
-
-
-- Clone the repository 
-    - Click on the "Code" button and copy the URL.
-    - On your local machine, run terminal / cmd and type `git clone <copied_url>`. This creates a new folder named "Random-APIs".
-    - Go to the folder.
+You are free to select any topic such as Python, Machine Learning, Deep Learning, Computer Vision, Web Development, etc. Your contribution can be **your mini-project**, **algorithms**, **solution to coding problem**, etc. Just make sure to follow the below guidelines strictly.
 
 ## How to contribute?
 
-### Preparation
-- Make sure that the main branch of your fork is even with this repo. 
+Refer to [Contributing Guidelines](https://github.com/Learn-Write-Repeat/Hacktoberfest-Contributions/blob/master/CONTRIBUTING.md) to learn how to setup the repository.
 
-- Otherwise, click on the "Fetch and merge" button and go to the project folder on your computer and run `git pull` to update the changes in your local repo.
+Once you are ready with the setup, follow the below guidelines:
 
-- Launch a terminal and run the commands
-    - `git branch <your_branch_name>` - This creates a new branch. The branch name should be similar to the API name. 
-    - `git checkout <your_branch_name>` - Checkout to your branch. This helps you work in parallel but without disturbing files on the main branch.
- 
- ### Working on your contribution
-- Go to the [Public APIs repository](https://github.com/public-apis/public-apis).
-- Browse through the list and pick any.
-- The chosen API should have HTTPS enabled.
-- Think of some creative use-case of this API, something you would like everybody to see.
-- Now, Open VS code or any text editor.
-- Go to `main.js` file.
-- Create a new fetch api call after the last one, as:
-```
-fetch("https://api.adviceslip.com/advice", {
-  method: "GET",
-})
-  .then((res) => res.json())
-  .then((data) => {
-    let response = `
-        <div class="col-lg-12 mb-4">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">Random Advice API</h4>
-                <h5 class="card-text mt-4">
-                  ${data.slip.advice}
-                </h5>
-                <br />
-                <a href="https://github.com/ashutoshkrris" class="username"
-                  ><img
-                    src="https://avatars.githubusercontent.com/u/47353498?v=4"
-                    alt="DP"
-                    class="rounded-circle img-fluid mr-2"
-                    width="40"
-                    height="40"
-                  />ashutoshkrris</a
-                >
-                &nbsp;
-                <a
-                  href="https://api.adviceslip.com/"
-                  class="btn btn-outline-dark btn-sm"
-                  ><i class="fa fa-link" aria-hidden="true"></i> Advice Slip</a
-                >
-              </div>
-            </div>
-          </div>
-        `;
-    responsesBody.innerHTML += response;
-  });
-```
-- Make sure you make these required changes:
-    - Replace the **title** with the title of your API
-    ![Change Title](https://i.imgur.com/k6AoOtO.png)
+1. Create a folder with the Topic Name in snake case, i.e., if your topic is URL Shortener using Flask, the folder name should be **url_shortener_using_flask**.
 
-    - Replace the **response text**
-    ![Change Response](https://i.imgur.com/CwWzQBc.png)
+2. Create a markdown file called README.md inside the folder and describe your topic. The description can be **Problem statement of your code**, **Algorithm description**, or something that is relevant to your code.
 
-    - Replace **Github Profile URL**, **Image Source** and **Github Username** with that yours
-    ![User Replacements](https://i.imgur.com/CTNECGS.png)
+3. Also, add screenshots, or codes, or Jupyter notebooks inside the same folder.
 
-    - Finally, replace the **API Documentation URL** and **API Name**
-    - ![API Replacements](https://i.imgur.com/L2yjliH.png)
+4. After adding these files, you can create a pull request.
 
-- Go through the documentation of your API. It would contain instructions on its usage. Use those instructions to create a fetch request. Take help from randomQuotes component. This step would be different for all of us. Don't worry, API documentation and code in other components would give you enough clues. Consume the API and display its response in your component.
-- Please do not add any API which requires API Key to access it.
-- Great, if you have done the above part Congratulations! :tada:
-- Run the project to verify your code works as expected.
 
-### Submitting your work
-- Open a terminal and run these commands
-    - `git add .` - stage your changes.
-    - `git commit -m <your commit message>` - commit changes
-    - `git checkout main` - checkout back to the main branch
-    - `git push --all` - push all changes to Github.
-- Go to your fork, you would see a pop-up asking you to make a PR. Click on it.
-- Write a small description and complete the checklist. Click on "Make a PR".
+### Resources
 
-Wait for it to get approved and merged. Awesome, you have made your first contribution. To make a further contribution, you need to create new branches. Your next contributions could be improvements to previous work or a new API call. 
+* [Learn about Markdown](https://github.com/Learn-Write-Repeat/Open-contributions/blob/master/Markdown.md)
+* [Introduction to Jupyter Notebook](https://github.com/Learn-Write-Repeat/Open-contributions/blob/master/Trivedh_Jupyter_Tutorial.md)
 
 ### Contributors
 
 <a href="https://github.com/Learn-Write-Repeat/Hacktoberfest-Contributions/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Learn-Write-Repeat/Hacktoberfest-Contributions" />
 </a>
+
+<br>
+<h5 align="center">
+< Happy Contributing />
+<br>
+DevIncept | © 2021
+</h5>
